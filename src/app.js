@@ -100,9 +100,9 @@ ArrayReverse(dataset2);
 
 // 5º que me devuelva el array al reves pero con las palabras al reves.
 
-const ArrayRev = arr => arr.reverse();
+const ArrayRev = arr => arr.reverse();                                      //En la primera parte del ejercicio pondremos el array al reves
 const ReverseWord = arr => {
-  return ArrayRev(arr).map(val => ArrayRev(val.split("")).join(""));
-};
+  return ArrayRev(arr).map(val => ArrayRev(val.split("")).join(""));        //En esta parte, utilizaremos map para transformar el array (volteado) en un nuevo array 
+};                                                                          // que tenga la misma longitud pero con los item transformados
 
-console.log(ReverseWord(ArrayRev(dataset2)));
+ReverseWord(ArrayRev(dataset2));                                            // Combinacion de ambas funciones para obtener el resultado deseado
